@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FSAD-PROJECT%204/static/css/main.b7f94eb7.css",
+    "main.js": "/FSAD-PROJECT%204/static/js/main.2a0c2a27.js",
+    "index.html": "/FSAD-PROJECT%204/index.html",
+    "main.b7f94eb7.css.map": "/FSAD-PROJECT%204/static/css/main.b7f94eb7.css.map",
+    "main.2a0c2a27.js.map": "/FSAD-PROJECT%204/static/js/main.2a0c2a27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7f94eb7.css",
+    "static/js/main.2a0c2a27.js"
+  ]
+}
