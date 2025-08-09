@@ -31,22 +31,23 @@ const Carousel = () => {
   const extendedData = [...carouselData, carouselData[0]];
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      if (!isPaused) {
-        if (currentSlide === carouselData.length - 1) {
-          setCurrentSlide(curr => curr + 1);
-          setTimeout(() => {
-            setIsTransitioning(false);
-            setCurrentSlide(0);
-          }, 500);
-        } else {
-          setCurrentSlide(curr => curr + 1);
-        }
+  const timer = setInterval(() => {
+    if (!isPaused) {
+      if (currentSlide === carouselData.length - 1) {
+        setCurrentSlide(curr => curr + 1);
+        setTimeout(() => {
+          setIsTransitioning(false);
+          setCurrentSlide(0);
+        }, 500);
+      } else {
+        setCurrentSlide(curr => curr + 1);
       }
-    }, 3000);
+    }
+  }, 3000);
 
-    return () => clearInterval(timer);
-  }, [currentSlide, isPaused]);
+  return () => clearInterval(timer);
+}, [currentSlide, isPaused, carouselData.length]);  // added carouselData.length here
+
 
   const handleTransitionEnd = () => {
     if (currentSlide === carouselData.length) {
