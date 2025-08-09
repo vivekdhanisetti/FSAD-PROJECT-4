@@ -1,0 +1,149 @@
+.overview-container {
+    display: flex;
+    width: 90%;
+    max-width: 1400px;
+    margin: 60px auto;
+    background: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(31, 58, 147, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.left-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF;
+}
+
+.left-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1F3A93;
+    margin-bottom: 20px;
+}
+
+.left-section .highlight {
+    color: #1F3A93;
+    font-weight: 800;
+}
+
+.left-section p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.find-doctor-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #1F3A93;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
+}
+
+.find-doctor-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(31, 58, 147, 0.3);
+    background: #008080;
+}
+
+.right-section {
+    flex: 1;
+    background: #F5F5DC;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-content: center;
+}
+
+.stat-box {
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(31, 58, 147, 0.05);
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(31, 58, 147, 0.1);
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1F3A93;
+    margin-bottom: 5px;
+}
+
+.stat-text {
+    font-size: 0.8rem;
+    color: #333333;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .overview-container {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .left-section {
+        padding: 30px;
+    }
+
+    .right-section {
+        padding: 30px;
+    }
+
+    .left-section h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .overview-container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        padding: 30px;
+    }
+
+    .right-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .right-section {
+        grid-template-columns: 1fr;
+    }
+
+    .left-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .find-doctor-btn {
+        width: 100%;
+        text-align: center;
+    }
+} 

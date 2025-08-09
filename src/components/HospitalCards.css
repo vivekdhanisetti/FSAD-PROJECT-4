@@ -1,0 +1,107 @@
+.dashboard {
+    display: flex;
+    flex-direction: row; /* Ensures cards are in a single row */
+    justify-content: center; /* Center align cards horizontally */
+    align-items: flex-start; /* Prevent vertical stacking */
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 2000px;
+    margin: 0 auto; /* Center the dashboard */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    flex-wrap: nowrap; /* Prevent wrapping to next line */
+}
+
+.hospital-card {
+    width: 350px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+    flex: 0 0 auto; /* Prevent shrinking */
+    min-width: 250px;
+    background: none !important; /* Ensure no background */
+    box-shadow: none !important; /* Remove shadow */
+    flex-shrink: 0; /* Prevent wrapping */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.hospital-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-front {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.card-front img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Force image to fit */
+    border-radius: 10px;
+}
+
+.card-back {
+    background: none !important; /* Remove white background */
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card-body {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.card-count {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.card-update {
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    margin: 5px 0 0 0;
+}

@@ -1,0 +1,74 @@
+.hospital-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    padding: 40px; /* Increase padding for larger card size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Increase gap after card */
+}
+
+.hospital-card img {
+    width: 250px; /* Increase image size */
+    height: 180px; /* Increase image size */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.hospital-info {
+    margin-left: 30px; /* Increase margin for larger card size */
+    flex: 1;
+}
+
+.hospital-info h3 {
+    font-size: 22px; /* Increase font size */
+    font-weight: bold;
+    margin-bottom: 25px; /* Increase gap after hospital name */
+}
+
+.hospital-info p {
+    font-size: 18px; /* Increase font size */
+    color: #555;
+    margin: 5px 0;
+}
+
+.hospital-info .contact {
+    color: #1F3A93;
+    font-weight: bold;
+}
+
+.hospital-info a {
+    color: #1F3A93;
+    text-decoration: none;
+    font-size: 18px; /* Increase font size */
+}
+
+.button-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap; /* Ensure buttons are in a single line */
+}
+
+.button {
+    padding: 12px 18px; /* Increase padding for larger button size */
+    border: none;
+    background: #1F3A93; /* Blue background */
+    cursor: pointer;
+    font-size: 18px; /* Increase font size */
+    color: white; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-radius: 5px; /* Add border radius */
+}
+
+.button:hover {
+    background: #66FCF1; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+.hospital-card .button-group {
+    display: flex;
+    gap: 20px; /* Adjust gap between buttons */
+}

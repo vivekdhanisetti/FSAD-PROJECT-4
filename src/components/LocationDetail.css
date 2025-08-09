@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px; /* Increase max-width to suit the card */
+    margin: auto;
+    background: white; /* Add white background */
+    padding: 40px; /* Add padding for inner spacing */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.header-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.header-box h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1F3A93;
+    margin-bottom: 20px;
+}
+
+.header-box p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hospital-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    padding: 40px; /* Further increase padding for larger card size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Further increase gap after card */
+}
+
+.hospital-card img {
+    width: 250px; /* Further increase image size */
+    height: 180px; /* Further increase image size */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.hospital-info {
+    margin-left: 30px; /* Further increase margin for larger card size */
+    flex: 1;
+}
+
+.hospital-info h3 {
+    font-size: 22px; /* Further increase font size */
+    font-weight: bold;
+    margin-bottom: 25px; /* Further increase gap after hospital name */
+}
+
+.hospital-info p {
+    font-size: 18px; /* Further increase font size */
+    color: #555;
+    margin: 5px 0;
+}
+
+.hospital-info .contact {
+    color: #1F3A93;
+    font-weight: bold;
+}
+
+.hospital-info a {
+    color: #1F3A93;
+    text-decoration: none;
+    font-size: 18px; /* Further increase font size */
+}
+
+.button-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 12px 18px; /* Further increase padding for larger button size */
+    border: 1px solid black;
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px; /* Further increase font size */
+}
+
+.button:hover {
+    background: black;
+    color: white;
+}
+
+.container h2 {
+    margin-bottom: 40px; /* Further increase gap after Good-cure */
+}
+
+.hospital-info h3::after {
+    content: " ";
+    display: block;
+    margin-top: 25px; /* Further increase gap after Hospitals */
+}

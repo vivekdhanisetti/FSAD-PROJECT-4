@@ -1,0 +1,12 @@
+# Normalize all text files to LF line endings in the repo, convert to native on checkout
+* text=auto
+
+# Force all .js files to use LF endings
+*.js text eol=lf
+
+# Treat images as binary
+*.png binary
+*.jpg binary
+
+# Prevent merge conflicts for package-lock.json by always taking ours
+package-lock.json merge=ours
